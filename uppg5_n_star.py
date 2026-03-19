@@ -8,7 +8,13 @@ Exempel för n=5 : https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pen
 """
 import turtle
 
+n = 5
+t = turtle.Turtle()
 
+angle = 180 - (180 / n)
 
+for _ in range(n):
+    t.forward(100)
+    t.right(angle)
 
 turtle.done()

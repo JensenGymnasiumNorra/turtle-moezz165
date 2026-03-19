@@ -9,7 +9,13 @@ Metod 2, n=8 : https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Regular
 """
 import turtle
 
+n = 8
+t = turtle.Turtle()
 
+angle = 180 - (360 / n)
 
+for _ in range(n):
+    t.forward(100)
+    t.right(angle)
 
 turtle.done()

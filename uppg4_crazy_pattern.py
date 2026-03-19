@@ -10,13 +10,22 @@ Exempel på slumpad färg och storlek:
 import turtle
 import random
 
-# Skapa en turtle
+screen = turtle.Screen()
+screen.bgcolor("black")
+
 padda = turtle.Turtle()
+padda.speed(0) 
+padda.width(2)
 
-# Exempel: Lista med färger att välja från
-farger = ["red", "blue", "green", "yellow", "purple", "orange"]
-padda.pencolor(random.choice(farger))  # Slumpar en färg från listan
-padda.pensize(random.randint(1, 10))   # Slumpar pennans storlek mellan 1 och 10
+farger = ["red", "blue", "green", "yellow", "purple", "orange", "cyan", "magenta", "white"]
 
+for i in range(60):
+    padda.pencolor(random.choice(farger))
+    padda.pensize(random.randint(1, 4))
+    for _ in range(6):
+        padda.forward(100)
+        padda.right(60)
+    padda.right(6)
+    padda.forward(10)
 
 turtle.done()

@@ -8,7 +8,19 @@ Rita en till kvadrat med hjälp av .goto(x,y) som inte överlappar med den förs
 """
 import turtle
 
+t = turtle.Turtle()
 
+for _ in range(4):
+    t.forward(100)
+    t.right(90)
 
+t.penup()
+t.goto(150, 150)
+t.pendown()
+
+punkter = [(250, 150), (250, 50), (150, 50), (150, 150)]
+
+for x, y in punkter:
+    t.goto(x, y)
 
 turtle.done()

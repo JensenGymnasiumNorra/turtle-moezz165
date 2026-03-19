@@ -7,7 +7,8 @@ Hur stor blir cirkeln om du ändrar värdet av r till 50?
 """
 import turtle
 
-
-
+padda = turtle.Turtle()
+r = 50
+padda.circle(r)
 
 turtle.done()
